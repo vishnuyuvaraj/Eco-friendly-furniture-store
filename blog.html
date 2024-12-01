@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-friendly Furniture Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpeg" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="product.html">Products</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our sustainability intiatives</h1>
+    </section>
+
+<!---  Blog content ---!>
+
+<section class="hero-blog">
+    <div class="hero-content">
+      <h1>Eco-Friendly Furniture Blog</h1>
+      <p>Discover sustainable design trends and tips for a greener home</p>
+    </div>
+    <div class="hero-image">
+      <img src="images/designtrend.avif">
+    </div>
+  </section>
+
+  <section class="blog-posts">
+    <h2>Latest Posts</h2>
+    <div class="post-grid">
+      <div class="post-card">
+        <img src="images/post1.jpg">
+        <h3>Sustainable Furniture Trends for 2025</h3>
+        <p>Explore the latest eco-friendly furniture designs and materials that are shaping the industry</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="post-card">
+        <img src="images/post2.avif">
+        <h3>Upcycling Furniture: Give New Life to Old Pieces</h3>
+        <p>Learn how to transform secondhand furniture into unique, one-of-a-kind pieces for your home</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="post-card">
+        <img src="images/post3.webp">
+        <h3>Eco-Friendly Furniture Care: Tips for a Greener Home</h3>
+        <p>Discover natural cleaning methods and maintenance techniques to keep your furnitures looking its best</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </section>
+
+<section class="comments">
+  <h2>Leave a Comment</h2>
+  <form class="comment-form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="comment">Comment</label>
+      <textarea id="comment" name="comment" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn">Submit</button>
+  </form>
+
+  <div class="comment-list">
+    <h3>Comments</h3>
+    <div class="comment-card">
+      <div class="comment-header">
+        <h4>Roshan</h4>
+        <p>April 15, 2024</p>
+      </div>
+      <p class="comment-content">This is a great article on sustainable furniture trends. I'm definitely going to check out some of these eco-friendly options for my home.</p>
+    </div>
+    <div class="comment-card">
+      <div class="comment-header">
+        <h4>Vashantiya</h4>
+        <p>March 22, 2024</p>
+      </div>
+      <p class="comment-content">Loved the tips on upcycling furniture. I can't wait to try some of these projects and give my old pieces a new life.</p>
+    </div>
+    <!-- Add more comments here -->
+</div>
+</section>
+
+<!---- Footer ----!>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are a furniture store dedicated to providing eco-friendly and sustainable home furnishings. Our mission is to help you create a beautiful and environmentally-conscious living space</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Made with <i class="fas fa-heart"></i>  by Eco Elegance</p>
+    </footer>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
